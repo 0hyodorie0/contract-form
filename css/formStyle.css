@@ -20,7 +20,7 @@ li {
     padding: 0;
     font-family: 'Nanum Gothic', sans-serif;
     color: #222;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -45,6 +45,7 @@ table {
     border: 2px solid;
     table-layout: auto;
     table-layout: fixed;
+    margin: 10px 0;
 }
 
 
@@ -52,6 +53,10 @@ table {
 
 .flex {
     display: flex;
+}
+
+.justify {
+    justify-content: space-between
 }
 
 .container {
@@ -64,6 +69,7 @@ table {
     padding: 4.5rem 1.6rem;
     margin: 6rem 0;
     border: 1px solid #ccc;
+    position: relative;
 }
 
 .text_indent {
@@ -72,6 +78,24 @@ table {
 
 .text_center {
     text-align: center !important;
+}
+
+.small_title {
+    vertical-align: top;
+    font-size: 0.88rem;
+}
+
+.border_right {
+    border-right: 1px solid #ccc;
+}
+
+.border_bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.first_td {
+    text-align: center;
+    width: 5rem;
 }
 
 .form_date {
@@ -218,14 +242,103 @@ footer {
     text-align: center;
 }
 
-.checklist .order_content>* {
-    display: inline-block;
+.checklist th:not(.first_td),
+.checklist td {
+    padding: 0.2rem 0.7rem;
 }
 
-.checklist .order_product_name {
-    width: 74%;
+.checklist .signature {
+    top: auto;
+    bottom: 3rem;
 }
 
-.checklist .order_content_check {
-    width: 24%;
+.checklist .form_date {
+    margin-left: 20rem;
+}
+
+.table_footer {
+    border: none;
+    border-bottom: 2px solid;
+}
+
+.name_th,
+.from_th {
+    width: 5rem;
+}
+
+.name_td {
+    width: 9rem;
+}
+
+@media screen and (max-width:768px) {
+    /*normal*/
+    body,
+    ul,
+    li {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+    body {
+        overflow-x: auto;
+    }
+    .container_wrap {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+    .checklist .form_date {
+        margin: 0;
+    }
+    .checklist th:not(.first_td),
+    .checklist td {
+        padding: 4px;
+    }
+    .first_td {
+        width: 2rem;
+    }
+    .name_th,
+    .from_th {
+        width: 2rem;
+    }
+    .name_td {
+        width: 4rem;
+    }
+    .small_title {
+        font-size: 0.7rem;
+    }
+    .signature {
+        width: 5rem;
+        right: -10px;
+    }
+    .table_footer td:first-child,
+    .table_footer td:nth-child(2) {
+        width: 30%
+    }
+    .table_footer td:last-child {
+        font-size: 0.7rem;
+    }
+    .checklist .signature {
+        bottom: 0;
+        right: 1rem;
+    }
+    .safety {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    .safety section {
+        margin-bottom: 1rem;
+    }
+    .safety .header {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    footer {
+        margin: 2rem 0;
+    }
+    .footer_wrap {
+        margin: 0;
+    }
+    .approval .supply {
+        top: -2rem;
+    }
 }

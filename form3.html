@@ -19,67 +19,188 @@
             </span>
             <h1 class="header">수의계약 체결 제한 여부 확인서</h1>
 
+            <ul class="flex justify">
+                <li>해당하는 [ ]에 V표시를 합니다.</li>
+                <li>(1쪽)</li>
+            </ul>
             <form action="" name="" class="">
                 <table>
-                    <tr>
-                        <th rowspan="3">발주자</th>
-                        <th>발주기관</th>
-                        <td></td>
-                        <th>발주부서</th>
-                        <td>수의계약담당</td>
-                        <th>발주날짜</th>
+                    <tr class="border_bottom">
+                        <th rowspan="3" class="border_right first_td">발주자</th>
+                        <th class="small_title">발주기관</th>
+                        <td class="border_right"></td>
+                        <th class="small_title">발주부서</th>
+                        <td class="border_right">수의계약담당</td>
+                        <th class="small_title">발주날짜</th>
                         <td></td>
                     </tr>
-                    <tr>
-                        <th>발주내용</th>
+                    <tr class="border_bottom">
+                        <th class="small_title">발주내용</th>
                         <td colspan="5" class="order_content">
-                            <div class="order_product_name">
-                                주문상품명 (20자 이상은 ... 표기)
-                            </div>
-                            <div class="order_content_check">
-                                <input type="checkbox" name="" id=""><label for="">공사</label>
-                                <input type="checkbox" name="" id=""><label for="">용역</label>
-                                <input type="checkbox" name="" id=""><label for="">물품</label>
-                                <input type="checkbox" name="" id=""><label for="">기타</label>
+                            <div class="flex justify">
+                                <div class="order_product_name">
+                                    주문상품명 (20자 이상은 ... 표기)
+                                </div>
+                                <div class="order_content_check">
+                                    <input type="checkbox" name="" id=""><label for="">공사</label>
+                                    <input type="checkbox" name="" id=""><label for="">용역</label>
+                                    <input type="checkbox" name="" id=""><label for="">물품</label>
+                                    <input type="checkbox" name="" id=""><label for="">기타</label>
+                                </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <th>수의계약 사유</th>
-                        <td colspan="5">국가계약법 시행령 제26조(수의계약에 의할 수 있는 경우) 1항 5호 가목        2) 추정가격이 2천만원 이하인 물품의 제조·구매계약 또는 용역계약</td>
+                        <th class="small_title">수의계약 사유</th>
+                        <td colspan="5">
+                            국가계약법 시행령 제26조(수의계약에 의할 수 있는 경우) 1항 5호 가목
+                            <br>2) 추정가격이 2천만원 이하인 물품의 제조·구매계약 또는 용역계약</td>
                     </tr>
                 </table>
+                <table>
+                    <tr class="border_bottom">
+                        <th rowspan="2" class="border_right first_td">계약상대자<br>(확인인)</th>
+                        <th class="name_th">성명</th>
+                        <td class="border_right name_td">박 정 호</td>
+                        <th class="from_th">소속</th>
+                        <td>
+                            <div class="flex justify">
+                                <div class="">
+                                    (주)씨마켓플레이스
+                                </div>
+                                <div class="order_content_check">
+                                    <input type="checkbox" name="" id=""><label for="">공사</label>
+                                    <input type="checkbox" name="" id=""><label for="">용역</label>
+                                    <input type="checkbox" name="" id=""><label for="">물품</label>
+                                    <input type="checkbox" name="" id=""><label for="">기타</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td class="border_right">010-6742-9217</td>
+                        <th>주소</th>
+                        <td>서울시 종로구 창경궁로 20길 31</td>
+                    </tr>
+                </table>
+                <table>
+                    <colgroup>
+                        <col width="7%" />
+                        <col width="73%" />
+                        <col width="20%" />
+                    </colgroup>
+                    <tr>
+                        <th colspan="3" class="text_center border_bottom">수의계약 체결 제한 확인사항</th>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(1)</td>
+                        <td class="border_right">발주기관의 소속 고위공직자, 배우자, 고위공직자의 직계존속·비속 또는 생계를 같이하는 배우자의 직계존속·비속에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(2)</td>
+                        <td class="border_right">계약 업무을 법령상·사실상 담당하는 공직자, 배우자, 공직자의 직계존속·비속 또는 생계를 같이하는 배우자의 직계존속·비속에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(3)</td>
+                        <td class="border_right">발주기관(산하기관)의 감독기관 소속 고위공직자, 배우자, 고위공직자의 직계존속·비속 또는 생계를 같이하는 배우자의 직계존속·비속에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(4)</td>
+                        <td class="border_right">발주기관(자회사)의 모회사 소속 고위공직자, 배우자, 고위공직자의 직계존속·비속 또는 생계를 같이하는 배우자의 직계존속·비속에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(5)</td>
+                        <td class="border_right">상임위원회 위원의 국회의원, 배우자, 국회의원의 직계존속·비속  또는 생계를 같이하는 배우자의 직계존속·비속에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(6)</td>
+                        <td class="border_right">공공기관을 감사 또는 조사하는 지방의회의 의원, 배우자, 의원의 직계존속·비속 또는 생계를 같이하는 배우자의 직계존속·비속에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(7)</td>
+                        <td class="border_right">(1)부터 (6)까지 어느 하나에 해당하는 사람이 대표자인 법인 또는 단체에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="border_bottom">
+                        <td class="border_right text_center">(8)</td>
+                        <td class="border_right">(1)부터 (6)까지 어느 하나에 해당하는 사람과 특수한 관계의 사업자(공직자, 배우자, 공직자의 직계존속·비속, 생계를 같이하는 배우자의 직계존속·비속이 단독으로 또는 합산하여 발행주식 총수의 100분의 30 이상, 출자지분 총수의 100분의 30 이상, (2) 자본금 총액의 100분의 50 이상을 소유하고 있는 법인 또는 단체)에 해당하는가?</td>
+                        <td>
+                            <div class="order_content_check">
+                                <input type="checkbox" name="" id=""><label for="">예</label>
+                                <input type="checkbox" name="" id="" checked><label for="">아니요</label><br>
+                                <input type="checkbox" name="" id=""><label for="">해당없음</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p>「공직자의 이해충돌 방지법」제12조에 따른 수의계약 체결 제한에 대하여 위와 같이 확인합니다. 만약 위 사항이 사실과 다른 경우에는 어떠한 처벌이나 불이익도 감수할 것을 서약합니다.</p>
+
                 <section class="form_date text_center">
-                    <span> <span class="year" name=""> 2022 </span>.</span>
-                    <span> <span class="month" name=""> 07 </span>.</span>
-                    <span> <span class="day" name=""> 25 </span>.</span>
+                    <span> <span class="year" name=""> 2022 </span>년</span>
+                    <span> <span class="month" name=""> 07 </span>월</span>
+                    <span> <span class="day" name=""> 25 </span>일</span>
                 </section>
+                <table class="table_footer">
+                    <tr>
+                        <td>(주)씨마켓플레이스</td>
+                        <td>계약상대자(확인인)</td>
+                        <td>박 정 호</td>
+                        <td>(서명 또는 인)</td>
+                    </tr>
+                </table>
+                <div class="signature">
+                    <img src="signature.png" alt="인감도장">
+                </div>
             </form>
-            <h4>당사는 물품의 공급에 있어 위에 기재된 사항을 승낙합니다.</h4>
-            <footer>
-                <span class="supply">공급자</span>
-                <ul class="footer_wrap">
-                    <li>
-                        <div class="footer_title">사업자등록번호</div>
-                        <div class="footer_value">101-81-95319</div>
-                    </li>
-                    <li>
-                        <div class="footer_title">주 소</div>
-                        <div class="footer_value">서울시 종로구 창경궁로 20길 31</div>
-                    </li>
-                    <li>
-                        <div class="footer_title">상 호</div>
-                        <div class="footer_value">㈜씨마켓플레이스</div>
-                    </li>
-                    <li>
-                        <div class="footer_title">대 표 자</div>
-                        <div class="footer_value">박 정 호</div>
-                    </li>
-                    <li class="signature">
-                        <img src="signature.png" alt="인감도장">
-                    </li>
-                </ul>
-            </footer>
         </div>
     </div>
 </body>
