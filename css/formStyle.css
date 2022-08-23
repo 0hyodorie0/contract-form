@@ -131,7 +131,7 @@ footer {
 }
 
 .signature {
-    width: 7.8rem;
+    width: 5rem;
     position: absolute;
     top: 0rem;
     right: 0rem;
@@ -244,7 +244,8 @@ footer {
 
 .checklist .signature {
     top: auto;
-    bottom: 3rem;
+    bottom: 5rem;
+    right: 2rem;
 }
 
 .checklist .form_date {
